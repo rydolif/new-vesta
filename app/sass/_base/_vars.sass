@@ -1,0 +1,68 @@
+
+//----------------------fonts---------------------
+$fonts: 'Raleway', sans-serif
+$decor: 'PT_Serif', sans-serif
+$title: 'Playfair_Display', sans-serif
+// $fonts: 'Poiret_One', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #e3a75e
+$text: #323139
+$green: #1d364e
+$gray: #eaeef0
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 16px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+	+r(1200)
+		font-size: 14px
+
+	+r(480)
+		font-size: 12px
+
+::selection
+	background-color: $accent
+	color: #fff
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	line-height: 1.2
+	margin: 0
+	padding: 0
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+button
+	transition: all .6s
+	
+	&:focus,
+	&:hover,
+		outline: none
+		text-decoration: none
+		transition: all .6s
+		border: none
+		outline: none
