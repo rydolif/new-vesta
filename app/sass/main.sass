@@ -215,7 +215,7 @@ h2
 			padding: 55px 25px 85px
 
 		+r(1200)
-			padding: 45px 20px
+			padding: 25px 20px 85px
 
 		+r(992)
 			+around
@@ -276,7 +276,6 @@ h2
 	&__content
 		width: 49%
 		padding-top: 175px
-		text-align: center
 
 		+r(1440)
 			width: 55%
@@ -377,6 +376,13 @@ h2
 				margin-bottom: 30px
 
 			+r(767)
+				width: 100%
+		
+		div
+			+r(578)
+				width: 50%
+
+			+r(480)
 				width: 100%
 
 		img
@@ -920,6 +926,10 @@ h2
 			outline: none
 			cursor: pointer
 
+			+r(767)
+				width: 30px
+				height: 30px
+
 			&:hover,
 			&:focus
 				box-shadow: 0 0 10px 0 rgba($text, .2)
@@ -933,6 +943,10 @@ h2
 				height: 16px
 				border-top: 2px solid $text
 				border-left: 2px solid $text
+
+				+r(767)
+					width: 12px
+					height: 12px
 
 		&_prev
 			span
